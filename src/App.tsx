@@ -119,15 +119,15 @@ const Hero = () => (
       >
         <div className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
           <Award size={14} />
-          Doctor-led, Practical, No Fluff
+          Doctor-led • Data-Backed • Result-Oriented
         </div>
         <h1 className="text-4xl md:text-6xl font-bold text-slate-900 leading-[1.1] mb-6">
-          Predictable Patients. <br />
-          <span className="text-brand-600">Predictable Revenue.</span>
+          Scale Your Clinic with <br />
+          <span className="text-brand-600">Business Intelligence.</span>
         </h1>
         <p className="text-lg md:text-xl text-slate-600 mb-8 max-w-lg leading-relaxed">
-          1:1 Growth Strategy Sessions for Ayurvedic Clinics & Hospitals. 
-          Positioned at the intersection of <span className="font-semibold text-slate-900">Clinical Excellence (BAMS)</span> and <span className="font-semibold text-slate-900">Business Strategy (MBA)</span>.
+          1:1 Growth Strategy Sessions for Ayurvedic Practitioners. 
+          Combining <span className="font-semibold text-slate-900">Clinical BAMS expertise</span> with <span className="font-semibold text-slate-900">MBA Marketing strategy</span> to optimize your healthcare facility.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -138,19 +138,12 @@ const Hero = () => (
             Book a Free Strategy Call
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
           </a>
-          <a 
-            href={WHATSAPP_LINK}
-            className="bg-white text-slate-900 border-2 border-slate-100 px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-50 transition-all flex items-center justify-center gap-3"
-          >
-            <MessageCircle size={20} className="text-green-500" />
-            Chat on WhatsApp
-          </a>
         </div>
 
         <div className="flex flex-wrap items-center gap-6 text-sm text-slate-500">
           <div className="flex items-center gap-2">
             <Clock size={16} className="text-orange-500" />
-            <span className="font-semibold text-slate-700">Only 20 Clinics & 5 Hospitals onboarded</span>
+            <span className="font-semibold text-slate-700">Limited to 5 Clinics per month</span>
           </div>
           <div className="flex items-center gap-2">
             <Phone size={16} className="text-brand-600" />
@@ -165,22 +158,34 @@ const Hero = () => (
         transition={{ duration: 0.8, delay: 0.2 }}
         className="relative"
       >
-        <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-8 border-white aspect-[4/5] md:aspect-auto">
-          <img 
-            src="https://images.unsplash.com/photo-1559839734-2b71f153678f?auto=format&fit=crop&q=80&w=800" 
-            alt="Dr. Aditi Chourasia" 
-            className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-900/40 to-transparent"></div>
-          <div className="absolute bottom-6 left-6 right-6 glass-card p-4 rounded-2xl">
+        <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-8 border-white aspect-[4/5] md:aspect-auto bg-gradient-to-br from-brand-600 to-brand-900 p-12 flex flex-col items-center justify-center text-white">
+          <div className="w-24 h-24 bg-white/20 rounded-2xl flex items-center justify-center mb-8 animate-float">
+            <TrendingUp size={48} />
+          </div>
+          <div className="text-center">
+            <div className="flex justify-center gap-4 mb-6">
+              <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                <Award size={24} />
+              </div>
+              <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                <ShieldCheck size={24} />
+              </div>
+              <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                <LayoutDashboard size={24} />
+              </div>
+            </div>
+            <h3 className="text-2xl font-bold mb-2">Growth Strategy</h3>
+            <p className="text-brand-100 text-sm">Clinical Excellence meets Business Intelligence</p>
+          </div>
+          
+          <div className="absolute bottom-6 left-6 right-6 glass-card p-4 rounded-2xl text-slate-900">
             <div className="flex items-center gap-3">
               <div className="bg-brand-500 p-2 rounded-lg text-white">
                 <ShieldCheck size={24} />
               </div>
               <div>
-                <p className="font-bold text-slate-900">Dr. Aditi Chourasia</p>
-                <p className="text-xs text-slate-600 font-medium uppercase tracking-wider">BAMS + MBA (Strategy)</p>
+                <p className="font-bold">Dr. Aditi Chourasia</p>
+                <p className="text-xs text-slate-600 font-medium uppercase tracking-wider">BAMS + MBA (Marketing)</p>
               </div>
             </div>
           </div>
@@ -241,10 +246,10 @@ const ProblemSection = () => {
 
 const SolutionSection = () => {
   const pillars = [
-    { title: "Marketing", desc: "Predictable patient acquisition without burning money on generic ads." },
-    { title: "Branding", desc: "Positioning yourself as the go-to specialist in your region." },
-    { title: "Operations", desc: "Streamlining patient journey from first call to final follow-up." },
-    { title: "Revenue", desc: "Optimizing pricing models and treatment packages for profitability." }
+    { title: "GTM Marketing", desc: "Applying high-level Go-To-Market strategies to your local clinic market." },
+    { title: "Brand Narrative", desc: "Crafting a 'Roots-first' communication strategy (TEDx Speaker) that builds trust." },
+    { title: "Data Operations", desc: "Optimizing patient record management (15k+ records managed) for efficiency." },
+    { title: "Revenue Models", desc: "Structured financial modeling to ensure clinical excellence translates to profit." }
   ];
 
   return (
@@ -255,7 +260,7 @@ const SolutionSection = () => {
           <div>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">The 1:1 Growth <br />Strategy Session</h2>
             <p className="text-brand-100 text-lg mb-10 leading-relaxed">
-              A deep-dive session tailored specifically for your facility. We don't give generic advice; we build a roadmap based on your local market and clinical strengths.
+              I don't give generic advice. I apply high-level business frameworks from my MBA and corporate internships to the unique challenges of your Ayurvedic practice.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {pillars.map((p, i) => (
@@ -276,10 +281,10 @@ const SolutionSection = () => {
             <ul className="space-y-4 mb-8">
               {[
                 "60-minute intensive 1:1 consultation",
-                "Customized Clinic Audit Report",
-                "Step-by-step 90-day Action Plan",
-                "Marketing budget optimization guide",
-                "Staff training framework"
+                "GTM (Go-To-Market) Strategy for your region",
+                "Patient Record & Data Efficiency Audit",
+                "Brand Narrative & Communication Plan",
+                "90-day Actionable Growth Roadmap"
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-brand-50">
                   <div className="w-1.5 h-1.5 bg-brand-500 rounded-full"></div>
@@ -397,42 +402,53 @@ const About = () => (
         <div className="order-2 md:order-1">
           <div className="inline-block bg-brand-100 text-brand-700 px-4 py-1 rounded-full text-sm font-bold mb-6">Meet Your Strategist</div>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Dr. Aditi Chourasia</h2>
-          <p className="text-lg text-slate-700 font-semibold mb-4">Ayurvedic Doctor (BAMS) + MBA (Strategy & Marketing)</p>
+          <p className="text-lg text-slate-700 font-semibold mb-4">BAMS (Dr. D.Y. Patil, Pune) + MBA Marketing (TAPMI)</p>
           <div className="space-y-4 text-slate-600 leading-relaxed">
             <p>
-              I understand your world because I'm a part of it. As a qualified Ayurvedic doctor, I know the clinical challenges, the patient psychology, and the traditional values of our science.
+              I bridge the gap between clinical Ayurveda and modern business strategy. With a clinical foundation in BAMS and a strategic MBA from TAPMI, I help practitioners scale without compromising their values.
             </p>
             <p>
-              But as an MBA, I also see the gaps that keep brilliant doctors from reaching their full potential. My unique positioning allows me to translate complex business strategies into practical steps for your clinic.
+              My approach is backed by real-world experience: from building GTM strategies for luxury real estate to managing <span className="font-semibold">15,000+ patient records</span> during my clinical internship.
             </p>
             <p>
-              I don't believe in "traditional" marketing that feels cheap. I believe in premium positioning that commands respect and drives results.
+              I am a <span className="font-semibold">TEDx Speaker</span> ('Going Back to Roots') and the <span className="font-semibold">winner of many case competitions and hackathons</span> (including the Maharashtra Health Hackathon), where I developed innovative healthcare solutions.
             </p>
           </div>
-          <div className="mt-10 flex items-center gap-6">
+          <div className="mt-10 flex flex-wrap items-center gap-6">
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-slate-900">10+</span>
-              <span className="text-xs text-slate-500 uppercase font-bold tracking-wider">Years Exp.</span>
+              <span className="text-xl font-bold text-slate-900">TEDx</span>
+              <span className="text-xs text-slate-500 uppercase font-bold tracking-wider">Speaker</span>
             </div>
             <div className="w-px h-10 bg-slate-200"></div>
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-slate-900">50+</span>
-              <span className="text-xs text-slate-500 uppercase font-bold tracking-wider">Clinics Consulted</span>
+              <span className="text-xl font-bold text-slate-900">Hackathon</span>
+              <span className="text-xs text-slate-500 uppercase font-bold tracking-wider">Winner</span>
+            </div>
+            <div className="w-px h-10 bg-slate-200"></div>
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-slate-900">TAPMI</span>
+              <span className="text-xs text-slate-500 uppercase font-bold tracking-wider">MBA Marketing</span>
             </div>
           </div>
         </div>
         <div className="order-1 md:order-2 relative">
-          <div className="aspect-square rounded-[2rem] overflow-hidden shadow-2xl">
-            <img 
-              src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=800" 
-              alt="Dr. Aditi Chourasia Profile" 
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
-            />
+          <div className="aspect-square rounded-[2rem] overflow-hidden shadow-2xl bg-slate-50 border border-slate-100 flex flex-col items-center justify-center p-12">
+            <div className="w-32 h-32 bg-brand-100 rounded-3xl flex items-center justify-center text-brand-600 mb-8">
+              <Users size={64} />
+            </div>
+            <div className="text-center space-y-4">
+              <div className="flex justify-center gap-2">
+                <div className="w-2 h-2 bg-brand-500 rounded-full"></div>
+                <div className="w-2 h-2 bg-brand-300 rounded-full"></div>
+                <div className="w-2 h-2 bg-brand-200 rounded-full"></div>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900">Strategic Consulting</h3>
+              <p className="text-slate-500 text-sm max-w-xs">Bridging the gap between clinical Ayurveda and modern business systems.</p>
+            </div>
           </div>
           <div className="absolute -bottom-6 -right-6 bg-brand-600 text-white p-6 rounded-2xl shadow-xl hidden md:block">
             <p className="text-sm font-medium opacity-80">Clinical + Business</p>
-            <p className="text-xl font-bold">The Perfect Hybrid</p>
+            <p className="text-xl font-bold">The Hybrid Advantage</p>
           </div>
         </div>
       </div>
