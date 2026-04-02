@@ -122,11 +122,11 @@ const Hero = () => (
           Doctor-led • Data-Backed • Result-Oriented
         </div>
         <h1 className="text-4xl md:text-6xl font-bold text-slate-900 leading-[1.1] mb-6">
-          Scale Your Clinic with <br />
-          <span className="text-brand-600">Business Intelligence.</span>
+          Scale Your Clinic or <br />
+          <span className="text-brand-600">Hospital with Intelligence.</span>
         </h1>
         <p className="text-lg md:text-xl text-slate-600 mb-8 max-w-lg leading-relaxed">
-          1:1 Growth Strategy Sessions for Ayurvedic Practitioners. 
+          1:1 Growth Strategy Sessions for Ayurvedic Practitioners & Hospital Owners. 
           Combining <span className="font-semibold text-slate-900">Clinical BAMS expertise</span> with <span className="font-semibold text-slate-900">MBA Marketing strategy</span> to optimize your healthcare facility.
         </p>
         
@@ -135,7 +135,7 @@ const Hero = () => (
             href={WHATSAPP_LINK}
             className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-brand-700 transition-all shadow-xl hover:shadow-brand-200 flex items-center justify-center gap-3 group"
           >
-            Book a Free Strategy Call
+            Apply for the Pilot Program
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
@@ -143,7 +143,7 @@ const Hero = () => (
         <div className="flex flex-wrap items-center gap-6 text-sm text-slate-500">
           <div className="flex items-center gap-2">
             <Clock size={16} className="text-orange-500" />
-            <span className="font-semibold text-slate-700">Limited to 5 Clinics per month</span>
+            <span className="font-semibold text-slate-700">Pilot: 20 Clinics & 5 Hospitals Only</span>
           </div>
           <div className="flex items-center gap-2">
             <Phone size={16} className="text-brand-600" />
@@ -207,12 +207,12 @@ const ProblemSection = () => {
     },
     {
       title: "Low Patient Retention",
-      desc: "Patients come for one consultation but never return for the full treatment course.",
+      desc: "Patients come for one consultation but never return for the full treatment course or IPD procedures.",
       icon: <TrendingUp className="text-orange-500 rotate-180" />
     },
     {
       title: "Income Mismatch",
-      desc: "You are working harder than ever, but your revenue doesn't reflect your clinical expertise.",
+      desc: "You are working harder than ever, but your hospital's revenue doesn't reflect your clinical expertise.",
       icon: <Zap className="text-yellow-500" />
     }
   ];
@@ -221,7 +221,7 @@ const ProblemSection = () => {
     <section id="problem" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Is your clinic growing as fast as your expertise?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Is your clinic or hospital growing as fast as your expertise?</h2>
           <p className="text-slate-600">Most Ayurvedic practitioners are brilliant doctors but struggle with the business side of running a healthcare facility.</p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
@@ -347,12 +347,12 @@ const Outcomes = () => (
       <div className="bg-brand-50 rounded-[40px] p-8 md:p-20 overflow-hidden relative">
         <div className="grid md:grid-cols-2 gap-12 items-center relative z-10">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">The Result? <br />A Clinic That Runs Like a Business.</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">The Result? <br />A Hospital That Runs Like a Business.</h2>
             <div className="space-y-6">
               {[
-                { title: "Predictable Patient Inflow", desc: "No more 'lucky' months. Consistent bookings day after day." },
-                { title: "Better Retention", desc: "Patients who trust your brand and complete their treatments." },
-                { title: "Increased Revenue", desc: "Higher average revenue per patient through optimized services." },
+                { title: "Predictable Patient Inflow", desc: "No more 'lucky' months. Consistent OPD and IPD bookings day after day." },
+                { title: "Better Retention", desc: "Patients who trust your brand and complete their full Panchakarma or treatment courses." },
+                { title: "Increased Revenue", desc: "Higher average revenue per patient through optimized services and packages." },
                 { title: "Structured Growth", desc: "A scalable model that doesn't depend solely on your presence." }
               ].map((item, i) => (
                 <div key={i} className="flex gap-4">
@@ -464,20 +464,21 @@ const OfferSection = () => (
     <div className="max-w-3xl mx-auto px-4 relative z-10">
       <h2 className="text-3xl md:text-5xl font-bold mb-6">A Risk-Free Investment in Your Future.</h2>
       <div className="bg-white/10 backdrop-blur-md p-8 md:p-12 rounded-[2.5rem] border border-white/20 mb-10">
-        <p className="text-brand-400 font-bold uppercase tracking-widest mb-4">Limited Time Offer</p>
+        <p className="text-brand-400 font-bold uppercase tracking-widest mb-4">Exclusive Pilot Program</p>
         <h3 className="text-2xl md:text-4xl font-bold mb-6">“Pay What You Feel Is Right”</h3>
         <p className="text-brand-100 text-lg mb-8 leading-relaxed">
-          I am so confident in the value of this session that I'm removing the fixed fee barrier. 
+          I am launching this pilot to help the Ayurvedic community scale. 
+          Removing the fixed fee barrier for the first <span className="text-white font-bold">20 Clinics & 5 Hospitals</span>. 
           If you don't find the strategy actionable, you pay nothing. 
           <br />
-          <span className="text-white font-bold mt-4 block">Only 3 slots left for this month.</span>
+          <span className="text-white font-bold mt-4 block">Limited slots available for this pilot.</span>
         </p>
         <a 
           href={WHATSAPP_LINK}
           className="inline-flex items-center gap-3 bg-white text-slate-900 px-10 py-5 rounded-full font-bold text-xl hover:bg-brand-50 transition-all shadow-2xl"
         >
           <MessageCircle size={24} className="text-green-500" />
-          DM 'GROWTH' on WhatsApp
+          Join the Pilot Program
         </a>
       </div>
       <p className="text-slate-400">Or call directly: <span className="text-white font-bold">{PHONE_NUMBER}</span></p>
